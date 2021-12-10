@@ -6,14 +6,25 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
-    // 登录
+ 
     wx.login({
       success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
   },
   globalData: {
-    userInfo: null
+    products: [{
+      "id": 1,
+      "name": "bicycle1",
+      "price": "10",
+      "description": "janky but functional"
+      },
+      {
+        "id": 2,
+        "name": "bicycle1",
+        "price": "10",
+        "description": "janky but functional"
+        }
+    ]
   }
 })

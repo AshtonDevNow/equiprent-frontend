@@ -1,0 +1,33 @@
+/* pages/products/products.wxss */
+
+.grid-container {
+  grid-template-columns: auto;
+}
+
+
+.card-product {
+  background-color: hotpink;
+}
+
+.card-product .h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+.card-user {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}

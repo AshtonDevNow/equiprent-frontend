@@ -1,0 +1,25 @@
+<!--pages/products/products.wxml-->
+<text>pages/products/products.wxml</text>
+
+  <view class="grid-container">
+
+    <h1>Products</h1>
+
+   <view wx:key="{{products}}" wx:for-item="product" class="card-product" bindtap="onClick" data-id="{{product.id}}"> 
+      <view class="card-product-infos">
+      <text>ITEM</text>
+        <view class="h2">{{product.name}}</view>
+        <view class="h2">{{product.price}}</view>
+        <text class="h2">{{product.description}}</text>
+      </view>
+    </view> 
+
+    <text>EXPECTING TO SEE ITEMS ABOVE</text>
+
+
+
+  </view>
+
+  
+
+

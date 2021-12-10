@@ -1,15 +1,44 @@
 {
   "pages": [
+    "pages/loading/loading",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/products/products",
+    "pages/logs/logs", 
+    "pages/new/new",
+    "pages/show/show",
+    "pages/profile/profile"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "Git the Kit",
     "navigationBarTextStyle": "black"
   },
+ 
+  "tabBar": {
+    "backgroundColor": "#464660",
+    "borderStyle": "white",
+    "selectedColor": "#FF4893",
+    "color": "#131313",
+  
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "index"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "new"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "profile"
+      }
+    ]  
+  },
+
+
   "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "sitemapLocation": "sitemap.json"
+
 }
