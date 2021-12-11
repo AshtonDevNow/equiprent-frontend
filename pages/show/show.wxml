@@ -1,17 +1,13 @@
 <!--pages/show/show.wxml-->
 <text>Product Details Page: pages/show/show.wxml</text>
 <view class="card-trip">
-  <view class="banner" style="background-image: url(https://images.unsplash.com/photo-1471999796791-874f5de3b3f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1246&q=80);"><h1>PRODUCT</h1>
-  </view>
+  <image class="card-user" src="https://cdn-icons-png.flaticon.com/512/3198/3198344.png"/>
+  <h1>PRODUCT</h1>
+  <view class="card-trip-infos">Name: {{name}}</view>
+  <view class="card-trip-infos">Description: {{description}}</view>
+  <view class="card-trip-infos">Price: ${{price}}</view>
 
-  <view class="card-trip-infos">
-    <view>
-      <h2>Item Name</h2>
-      <h2>{{name}}</h2>
-      <text>Short description here!</text>
-      <text>{{description}}</text>
-    </view>
-    <h2 class="card-trip-pricing">£99.99</h2>
-</view>
+  <button bindtap="goToEditPage">{{text}}Edit</button>
+  <button bindtap="goToEditPage">{{text}}Delete (edit)</button>
 </view>
 

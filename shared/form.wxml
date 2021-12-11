@@ -1,0 +1,22 @@
+<template name="form">
+  <form bindsubmit="bindSubmit">
+    <view class="page-section">
+      <h2>Name</h2>
+        <view class="text-area-wrap">
+          <textarea value="{{name}}" placeholder="Name here"/>
+        </view>
+      <h2>Description</h2>
+        <view class="text-area-wrap">
+          <textarea value="{{description}}" placeholder="Description here"/>
+        </view>
+      <h2>Description</h2>
+        <view class="text-area-wrap">
+          <textarea value="{{price}}" placeholder="Price here"/>
+        </view>
+      <view class="btn-area">
+          <button style="margin: 30rpx 0" formType="submit">Submit</button>
+          <button style="margin: 30rpx 0" formType="reset">Reset</button>
+      </view>
+    </view>
+  </form>
+</template>

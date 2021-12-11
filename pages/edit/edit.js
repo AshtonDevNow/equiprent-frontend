@@ -1,23 +1,8 @@
-// pages/show/show.js
+// pages/edit/edit.js
 Page({
   data: {
   },
 
-  goToEditPage: function (e) {
-    console.log(e.currentTarget.dataset)
-    const id = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: `/pages/edit/edit?id=${id}`,
-    })
-  },
-  
-  onClick: function (e) {
-    console.log(e.currentTarget.dataset)
-    const id = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: `/pages/edit/edit?id=${id}`,
-    })
-  },
 
   onLoad: function (options) {
     const id = options.id
@@ -31,29 +16,47 @@ Page({
     page.setData(product[0])
   },
 
+  bindSubmit: function () {
+    const page = this
+    console.log(e)
+    const product = e.detail.value
+    const app = getApp()
+    const products = app.globalData.products
+    // Put data back into global data
+    const index = products.findIndex(r => r.id == page.data.id)
+
+    app.globalData.products[index] = product
+
+    wx.reLaunch({
+      url: '/pages/products/products',
+    })
+  },
+
 
   onReady: function () {
   },
 
+
   onShow: function () {
   },
+
 
   onHide: function () {
   },
 
-
+  
   onUnload: function () {
   },
 
- 
+
   onPullDownRefresh: function () {
   },
 
- 
+  
   onReachBottom: function () {
   },
 
-
+ 
   onShareAppMessage: function () {
   }
 })

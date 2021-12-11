@@ -1,10 +1,8 @@
 /* pages/show/show.wxss */
 
-
 .banner {
   height: 200rpx;
 }
-
 
 .card-trip {
   overflow: hidden;
@@ -44,4 +42,9 @@
   right: 16px;
   top: -20px;
   width: 40px;
+}
+
+button {
+  width: 50%;
+  margin: 8px;
 }

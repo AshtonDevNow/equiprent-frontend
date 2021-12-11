@@ -1,0 +1,5 @@
+<!--pages/edit/edit.wxml-->
+<import src="/shared/form.wxml" />
+<view class="container">
+  <template is="form" data="{{name: name, description: description, price: price}}"/>
+</view>

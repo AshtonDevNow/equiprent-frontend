@@ -4,19 +4,30 @@
   <view class="top-banner">
     <text>Top Banner</text>
   </view>
-
+  <h1>Categories</h1>
   <view class="categories-container">
-    <h1>Categories</h1>
-      <view class="category-cards">
-      <ul>
-        <li>Cycling</li>
-        <li>Winter</li>
-        <li>Racket</li>
-      </ul>
+
+      <view class="page-section page-section-spacing swiper">
+        <swiper
+          indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+          interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+          <block wx:for="{{background}}" wx:key="*this">
+            <swiper-item>
+              <view class="swiper-item {{item}}"></view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
     </view>
-  </view>
 
   <view class="recently-posted-container">
     <text>Recently Posted</text>
+    <view class="category-cards">
+        <view wx:for="{{products}}" wx:for-item="product" class="recently-posted-card" bindtap="onClick" data-id="{{product.id}}">
+        <!-- <view class="card-product-infos"> -->
+        <view class="h2">{{product.name}}: </view>
+        <view class="h2">${{product.price}}</view> 
+      </view> 
+    </view>
   </view>
 </view>

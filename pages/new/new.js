@@ -1,66 +1,54 @@
 // pages/new/new.js
 Page({
-
-  /**
-   * Page initial data
-   */
   data: {
+  },
+
+
+  bindSubmit: function (e) {
+    const app = getApp()
+    const page = this
+    const product = e.detail.value
+    console.log(product)
+    // Now auto-increment to add id
+    const products = app.globalData.products
+    const next_id = products[products.length-1].id + 1
+    product.id = next_id
+
+    app.globalData.products.push(product)
+    
+    wx.reLaunch({
+      url: '/pages/products/products',
+    })
 
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
   onLoad: function (options) {
-
   },
 
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
   onReady: function () {
-
   },
 
-  /**
-   * Lifecycle function--Called when page show
-   */
+
   onShow: function () {
-
   },
 
-  /**
-   * Lifecycle function--Called when page hide
-   */
+ 
   onHide: function () {
-
   },
 
-  /**
-   * Lifecycle function--Called when page unload
-   */
+ 
   onUnload: function () {
-
   },
 
-  /**
-   * Page event handler function--Called when user drop down
-   */
+
   onPullDownRefresh: function () {
-
   },
 
-  /**
-   * Called when page reach bottom
-   */
+  
   onReachBottom: function () {
-
   },
 
-  /**
-   * Called when user click on the top right corner to share
-   */
-  onShareAppMessage: function () {
 
+  onShareAppMessage: function () {
   }
 })

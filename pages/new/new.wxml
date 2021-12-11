@@ -1,2 +1,3 @@
 <!--pages/new/new.wxml-->
-<text>Create a listing: pages/new/new.wxml</text>
+<import src="/shared/form.wxml" />
+<template is="form"/>

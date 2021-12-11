@@ -1,25 +1,19 @@
-<!--pages/products/products.wxml-->
-<text>pages/products/products.wxml</text>
+<!--pages/stories/stories.wxml-->
 
+<view class="banner">
   <view class="grid-container">
+    
+    <view class="h1">Cycling Products</view>
 
-    <h1>Products</h1>
-
-   <view wx:key="{{products}}" wx:for-item="product" class="card-product" bindtap="onClick" data-id="{{product.id}}"> 
+    <view wx:for="{{products}}" wx:for-item="product" class="card-product" bindtap="onClick" data-id="{{product.id}}">
+      <image class="card-user" src="https://cdn-icons-png.flaticon.com/512/3198/3198344.png" />
       <view class="card-product-infos">
-      <text>ITEM</text>
         <view class="h2">{{product.name}}</view>
-        <view class="h2">{{product.price}}</view>
-        <text class="h2">{{product.description}}</text>
+        <view class="h3">{{product.description}}</view>
+        <view class="h3">Price: ${{product.price}}</view>
       </view>
-    </view> 
-
-    <text>EXPECTING TO SEE ITEMS ABOVE</text>
-
-
-
+    </view>
   </view>
-
+</view>
   
-
-
+<!-- <button bindtap="clickMe">{{text}}</button> -->

@@ -1,13 +1,10 @@
-/* pages/new/new.wxss */
-h2 {
-  color: white;
-}
+/* pages/edit/edit.wxss */
+
 
 textarea {
   padding: 12rpx;
   margin-top: 8rpx;
   margin-bottom: 8rpx;
-  height: 128rpx;
 }
 
 .page-body {
@@ -24,10 +21,8 @@ textarea {
 .text-area-wrap {
   background-color: #F1E9E5;
   box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-  opacity: 0.8;
 }
 
 button {
   width: 50%;
 }
-
