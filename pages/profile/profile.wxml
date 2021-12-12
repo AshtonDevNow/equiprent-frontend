@@ -1,2 +1,23 @@
 <!--pages/profile/profile.wxml-->
 <text>pages/profile/profile.wxml</text>
+
+<view class="container-box">
+  <text>My Profile</text>
+</view>
+
+<view class="container-box">
+  <text>Name</text>
+  <text>Location</text>
+  <text>Photo</text>
+</view>
+
+
+<view class="btn-area">
+  <view bindtap="goToUpdateProfile">TAKE ME TO UPDATE PROFILE</view>
+</view>
+<view class="btn-area">
+  <view bindtap="goToMyListings">TAKE ME TO MY LISTINGS</view>
+</view>
+<view class="btn-area">
+  <view bindtap="goToMyRentedProducts">TAKE ME TO MY RENTAL HISTORY</view>
+</view>

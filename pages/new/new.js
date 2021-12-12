@@ -8,7 +8,7 @@ Page({
     const app = getApp()
     const page = this
     const product = e.detail.value
-    console.log(product)
+
     // Now auto-increment to add id
     const products = app.globalData.products
     const next_id = products[products.length-1].id + 1

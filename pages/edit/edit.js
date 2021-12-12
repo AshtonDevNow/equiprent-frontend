@@ -16,7 +16,7 @@ Page({
     page.setData(product[0])
   },
 
-  bindSubmit: function () {
+  bindSubmit: function (e) {
     const page = this
     console.log(e)
     const product = e.detail.value

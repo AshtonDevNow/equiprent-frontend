@@ -7,21 +7,24 @@
     "pages/new/new",
     "pages/show/show",
     "pages/edit/edit",
-    "pages/profile/profile"
+    "pages/profile/profile", 
+    "pages/my-listings/my-listings", 
+    "pages/my-rented-products/my-rented-products", 
+    "pages/update-profile/update-profile"
   ],
+
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#4F091D",
     "navigationBarTitleText": "Git the Kit",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
  
   "tabBar": {
-    "backgroundColor": "#464660",
+    "backgroundColor": "#4F091D",
     "borderStyle": "white",
-    "selectedColor": "#FF4893",
-    "color": "#131313",
-  
+    "selectedColor": "#F5EEDC",
+    "color": "#F5EEDC",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -29,7 +32,8 @@
       },
       {
         "pagePath": "pages/new/new",
-        "text": "new"
+        "text": "new",
+        "iconPath": "/images/plus.png"
       },
       {
         "pagePath": "pages/profile/profile",
