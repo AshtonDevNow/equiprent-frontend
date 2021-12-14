@@ -1,4 +1,5 @@
 /* pages/new/new.wxss */
+
 h2 {
   color: white;
 }
@@ -8,9 +9,6 @@ textarea {
   margin-top: 8rpx;
   margin-bottom: 8rpx;
   height: 128rpx;
-}
-
-.page-body {
 }
 
 .page-section {
@@ -29,5 +27,6 @@ textarea {
 
 button {
   width: 50%;
+  background-color: #DD4A48;
 }
 

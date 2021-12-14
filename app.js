@@ -30,14 +30,8 @@ App({
         "price": "17",
         "description": "Full suspension"
         },
-        {
-          "id": 3,
-          "name": "Road bike",
-          "price": "30",
-          "description": "Superfast"
-          },
           {
-            "id": 4,
+            "id": 3,
             "name": "Unicycle",
             "price": "12",
             "description": "Good for clowning around"

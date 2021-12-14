@@ -5,7 +5,7 @@
 }
 
 .banner {
-  background-image: url(https://images.unsplash.com/photo-1552853662-8f707e1cb336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80);
+  background-color: #F5EEDC;
   opacity: 0.7;
   height: 100vh;
   position: relative;
@@ -14,18 +14,19 @@
 
 
 .banner .h1 {
-  color: #F1E9E5;
+  color: #1F2022;
   font-style: bold;
   font-size: 36px;
   top: 5%;
   position: relative;
   text-align: center;
+  
 }
 
 .card-product {
   overflow: hidden;
   height: 120px;
-  background-color: #F1E9E5;
+  background-color: #97BFB4;
   box-shadow: 0 3px 3px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;

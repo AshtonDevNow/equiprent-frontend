@@ -3,48 +3,51 @@ Page({
 
   // swiper
   onShareAppMessage() {
-    return {
-      title: 'swiper',
-      path: 'page/component/pages/swiper/swiper'
-    }
+    // return {
+    //   title: 'scroll-view',
+    //   path: 'page/component/pages/scroll-view/scroll-view'
+    // }
   },
 
   data: {
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: false,
-    interval: 2000,
-    duration: 500, 
-    item: "blah"
+    toView: 'green'
   },
 
-  changeIndicatorDots() {
-    this.setData({
-      indicatorDots: !this.data.indicatorDots
+  upper(e) {
+    console.log(e)
+  },
+
+  lower(e) {
+    console.log(e)
+  },
+  scroll(e) {
+    console.log(e)
+  },
+
+  scrollToTop() {
+    this.setAction({
+      scrollTop: 0
     })
   },
 
-  changeAutoplay() {
-    this.setData({
-      autoplay: !this.data.autoplay
-    })
+  tap() {
+    for (let i = 0; i < order.length; ++i) {
+      if (order[i] === this.data.toView) {
+        this.setData({
+          toView: order[i + 1],
+          scrollTop: (i + 1) * 200
+        })
+        break
+      }
+    }
   },
 
-  intervalChange(e) {
+  tapMove() {
     this.setData({
-      interval: e.detail.value
+      scrollTop: this.data.scrollTop + 10
     })
   },
-
-  durationChange(e) {
-    this.setData({
-      duration: e.detail.value
-    })
-  },
-// end swiper code 
-
-
+// end scroll code 
 
 
   onLoad: function (options) {
@@ -63,6 +66,26 @@ Page({
     })
   },
 
+  goToProductsPage: function (e) {
+    console.log("clicked")
+    wx.navigateTo({
+      url: '/pages/products/products',
+    })
+  },
+
+
+  goToProductsPage: function () {
+    wx.navigateTo({
+      url: '/pages/products/products',
+    })
+  },
+
+
+  // goToMyListings: function () {
+  //   wx.navigateTo({
+  //     url: '/pages/my-listings/my-listings',
+  //   })
+  // },
 
 
 
@@ -93,3 +116,5 @@ Page({
   onShareAppMessage: function () {
   }
 })
+
+

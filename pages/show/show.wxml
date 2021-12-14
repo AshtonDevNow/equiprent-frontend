@@ -1,12 +1,13 @@
 <!--pages/show/show.wxml-->
-<text>Product Details Page: pages/show/show.wxml</text>
-<view class="card-trip">
-  <image class="card-user" src="https://cdn-icons-png.flaticon.com/512/3198/3198344.png"/>
-  <h1>PRODUCT</h1>
-  <view class="card-trip-infos">Name: {{name}}</view>
-  <view class="card-trip-infos">Description: {{description}}</view>
-  <view class="card-trip-infos">Price: ${{price}}</view>
-
+<view class="card-product">
+  <image class="card-image" src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1048&q=80"/>
+  <view class="card-info">
+    <view class="h2">{{name}}</view>
+    <view class="p">${{price}}</view>
+  </view>
+  <view class="card-description">
+    <view class="p">{{description}}</view>
+  </view>
   <button bindtap="goToEditPage">{{text}}Edit</button>
   <button bindtap="goToEditPage">{{text}}Delete (edit)</button>
 </view>

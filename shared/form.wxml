@@ -3,15 +3,15 @@
     <view class="page-section">
       <h2>Name</h2>
         <view class="text-area-wrap">
-          <textarea name="name" value="{{name}}" placeholder="Name here"/>
+          <textarea name="name" value="{{name}}" placeholder="How shall we call you?"/>
         </view>
       <h2>Description</h2>
         <view class="text-area-wrap">
-          <textarea name="description" value="{{description}}" placeholder="Description here"/>
+          <textarea name="description" value="{{description}}" placeholder="Be as detailed as you like."/>
         </view>
-      <h2>Description</h2>
+      <h2>Price</h2>
         <view class="text-area-wrap">
-          <textarea name="price" value="{{price}}" placeholder="Price here"/>
+          <textarea name="price" value="{{price}}" placeholder="How much you want for it?"/>
         </view>
       <view class="btn-area">
           <button style="margin: 30rpx 0" formType="submit">Submit</button>
