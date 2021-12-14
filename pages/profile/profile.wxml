@@ -1,11 +1,10 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
 
-<view class="container-box">
+<view class="container">
   <text>My Profile</text>
 </view>
 
-<view class="container-box">
+<view class="container">
   <text>Name</text>
   <text>Location</text>
   <text>Photo</text>

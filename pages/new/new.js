@@ -14,6 +14,9 @@ Page({
     const next_id = products[products.length-1].id + 1
     product.id = next_id
 
+    // NOTE: Send headers in wx request
+    // Check github logic
+
     app.globalData.products.push(product)
     
     wx.reLaunch({

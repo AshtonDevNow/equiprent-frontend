@@ -94,6 +94,12 @@ Page({
 
 
   onShow: function () {
+    const page = this
+    const auth = wx.getStorageSync('auth')
+    const header = {
+      'X-User-Email': auth.email,
+      'X-User-Token': auth.token
+    }
   },
 
 

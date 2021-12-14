@@ -3,7 +3,7 @@
     <view class="page-section">
       <h2>Name</h2>
         <view class="text-area-wrap">
-          <textarea name="name" value="{{name}}" placeholder="How shall we call you?"/>
+          <textarea name="name" value="{{name}}" placeholder="What you selling?"/>
         </view>
       <h2>Description</h2>
         <view class="text-area-wrap">

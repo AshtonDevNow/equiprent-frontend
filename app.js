@@ -14,6 +14,7 @@ App({
               }, 
               success(res){
                 console.log(res.data)
+                console.log("Successful login!")
                 wx.setStorageSync('auth', res.data.auth)
               }
             })
