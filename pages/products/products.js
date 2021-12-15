@@ -32,7 +32,22 @@ Page({
 
   // Lifecycle function--Called when page show
   onShow: function () {
+    const page = this
+    const auth = wx.getStorageSync('auth')
+    const header = {
+      'X-User-Email': auth.email,
+      'X-User-Token': auth.token
+    }
+    wx.request({
+      url: `${getApp().globalData.baseUrl}/products`,
+      header, 
+      success(res) {
+        console.log(res.data)
+        page.setData(res.data)
+      }
+    })
   },
+
 
   // Lifecycle function--Called when page hide
   onHide: function () {
