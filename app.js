@@ -4,7 +4,6 @@ App({
     const app = this
       wx.login({
         success (res) {
-
           if (res.code) {
             wx.request({
               url: `${app.globalData.baseUrl}/login`,

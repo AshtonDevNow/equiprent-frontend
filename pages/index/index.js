@@ -100,6 +100,14 @@ Page({
       'X-User-Email': auth.email,
       'X-User-Token': auth.token
     }
+    wx.request({
+      url: `${getApp().globalData.baseUrl}/products`,
+      header, 
+      success(res) {
+        console.log(res.data)
+        page.setData(res.data)
+      }
+    })
   },
 
 

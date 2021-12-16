@@ -5,9 +5,7 @@
 </view>
 
 <view class="container">
-  <text>Name</text>
-  <text>Location</text>
-  <text>Photo</text>
+  <view class="h2">User Name: {{user.name}}</view>
 </view>
 
 
