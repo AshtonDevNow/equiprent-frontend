@@ -1,7 +1,8 @@
 // pages/stories/stories.js
 Page({
   // Page initial data
-  data: {
+  data: { 
+    test: "test"
   },
 
   onClick: function (e) {
@@ -38,12 +39,15 @@ Page({
       'X-User-Email': auth.email,
       'X-User-Token': auth.token
     }
+
+    console.log(header)
     wx.request({
       url: `${getApp().globalData.baseUrl}/products`,
       header, 
       success(res) {
         console.log(res.data)
-        page.setData(res.data)
+        page.setData({products:res.data.products})
+        // products is related to jbuilder file
       }
     })
   },
