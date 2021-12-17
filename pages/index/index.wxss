@@ -29,14 +29,17 @@
 
 .title-container h2{
   font-size: 48rpx;
+  padding-left: 24rpx;
 }
 
 .recently-posted-container {
   /* height: 150px; */
-  width: 100%;
-  display: flex;
+  /* width: 100%; */
   /* grid-template-columns: repeat(2, 1fr); */
+  display: flex;
   align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 
@@ -64,7 +67,6 @@
 /* align-items: center;
 justify-content: center; */
 }
-
 
 .card-info {
   padding: 12rpx;
