@@ -1,20 +1,18 @@
-<!--pages/profile/profile.wxml-->
 
 <view class="container">
-  <text>My Profile</text>
+  <view class="h1">My Profile</view>
 </view>
-
 <view class="container">
   <view class="h2">User Name: {{user.name}}</view>
 </view>
-
-
-<view class="btn-area">
-  <view bindtap="goToUpdateProfile">TAKE ME TO UPDATE PROFILE</view>
-</view>
-<view class="btn-area">
-  <view bindtap="goToMyListings">TAKE ME TO MY LISTINGS</view>
-</view>
-<view class="btn-area">
-  <view bindtap="goToMyRentedProducts">TAKE ME TO MY RENTAL HISTORY</view>
+<view class="container">
+  <view class="link-area">
+    <view class="button-link" bindtap="goToUpdateProfile"><h2>Update Profile</h2></view>
+  </view>
+  <view class="link-area">
+    <view class="button-link" bindtap="goToMyListings"><h2>Listings</h2></view>
+  </view>
+  <view class="link-area">
+    <view class="button-link" bindtap="goToMyRentedProducts"><h2>Rental History</h2></view>
+  </view>
 </view>

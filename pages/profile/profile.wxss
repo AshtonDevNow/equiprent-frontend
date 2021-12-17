@@ -1,1 +1,28 @@
-/* pages/profile/profile.wxss */
+.links-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin: 30rpx;
+}
+
+.button-link {
+  background-color: #97BFB4;
+  width: 300rpx;
+  height: 100rpx;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16rpx;
+  border-radius: 8rpx;
+}
+
+.button-category h2 {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.h1 {
+  font-size: 48rpx;
+  font-weight: bold;
+}

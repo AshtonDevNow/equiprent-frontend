@@ -1,14 +1,16 @@
 <!--pages/show/show.wxml-->
-<view class="card-product">
-  <image class="card-image" src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1048&q=80"/>
-  <view class="card-info">
-    <view class="h2">{{name}}</view>
-    <view class="p">${{price}}</view>
+<view wx:for="{{products}}" wx:for-item="product" bindtap="onClick" data-id="{{product.id}}">
+  <view class="card-product">
+    <image class="card-image" src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1048&q=80"/>
+    <view class="card-info">
+      <view class="h2">Item: {{product.name}}</view>
+      <view class="p">${{product.price}}</view>
+    </view>
+    <view class="card-description">
+      <view class="p">Description: {{product.description}}</view>
+    </view>
+    <!-- <button bindtap="goToEditPage">{{text}}Edit</button>
+    <button bindtap="goToEditPage">{{text}}Delete (edit)</button> -->
   </view>
-  <view class="card-description">
-    <view class="p">{{description}}</view>
-  </view>
-  <button bindtap="goToEditPage">{{text}}Edit</button>
-  <button bindtap="goToEditPage">{{text}}Delete (edit)</button>
 </view>
 
