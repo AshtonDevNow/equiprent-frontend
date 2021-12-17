@@ -3,6 +3,24 @@ Page({
   data: {
   },
 
+  // sendDataToBack(e){
+  //   console.log(e)
+  //   const name = e.detail.value.name
+  //   const description = e.detail.value.description
+  //   const category = e.detail.value.category
+  //   // const product = {name: name, description: description, category: category}
+  //   const product = {name, description, category}
+
+  //   wx.request({
+  //     url: `${getApp().globalData.baseUrl}/products`,
+  //     method: 'POST',
+  //     data: {product}
+  //     // way to push a post to the stories array in globalData
+  //   })
+
+
+  // }
+
   bindSubmit: function (e) {
     const page = this
     const app = getApp()
