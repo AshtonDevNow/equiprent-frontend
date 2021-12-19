@@ -23,6 +23,8 @@ Page({
 
   bindSubmit: function (e) {
     const page = this
+    const formData = e.detail.value
+    console.log("form data", formData)
     const app = getApp()
     // const product = e.detail.value
     const auth = wx.getStorageSync('auth')
@@ -32,13 +34,17 @@ Page({
     }
     wx.request({
       url: `${getApp().globalData.baseUrl}/products`,
-      header, 
+      header,
+      method: "POST",
+      data: {
+        product: formData,
+      },
       success(res) {
-        console.log(res.data)
+        console.log("server response", res.data)
         page.setData(res.data)
       }
     })
-    app.globalData.products.push(product)
+    // app.globalData.products.push(product)
     wx.reLaunch({
       url: '/pages/products/products',
     })
