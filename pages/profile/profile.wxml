@@ -3,7 +3,11 @@
   <view class="h1">My Profile</view>
 </view>
 <view class="container">
+  <view wx:for="{{users}}" wx:for-item="product" class="card-product" bindtap="onClick" data-id="{{user.id}}">
   <view class="h2">User Name: {{user.name}}</view>
+  <view class="h2">User Email: {{user.email}}</view>
+</view>
+
 </view>
 <view class="container">
   <view class="link-area">

@@ -19,25 +19,13 @@ Page({
     })
   },
 
-  // onLoad: function (options) {
-  //   const id = options.id
-  //   const app = getApp()
-  //   const globalData = app.globalData
-  //   const products = globalData.products
-  //   console.log("HELLO", products)
-  //   let product = products.filter(product => product.id == id)
-  //   console.log("HELLO", product)
-  //   const page = this
-  //   page.setData(product[0])
-  // },
-
   onReady: function () {
   },
 
 
-  // This part not really working. Expect to show items
-  onLoad: function () {
+  onLoad: function (options) {
     const page = this
+    const product_id = options.id
     const auth = wx.getStorageSync('auth')
     const header = {
       'X-User-Email': auth.email,
@@ -45,11 +33,10 @@ Page({
     }
     console.log("This is the header", header)
     wx.request({
-      url: `${getApp().globalData.baseUrl}/products`,
+      url: `${getApp().globalData.baseUrl}/products/${product_id}`,
       header, 
       success(res) {
-        // console.log(res.data)
-        page.setData({products:res.data.products})
+        page.setData({ product: res.data.product })
       }
     })
   },
