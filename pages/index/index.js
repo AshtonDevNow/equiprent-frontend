@@ -81,13 +81,6 @@ Page({
   },
 
 
-  // goToMyListings: function () {
-  //   wx.navigateTo({
-  //     url: '/pages/my-listings/my-listings',
-  //   })
-  // },
-
-
 
   onReady: function () {
   },
